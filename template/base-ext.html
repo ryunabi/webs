@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="page-content">
+        {% block page_content %}{% comment %} Filled in by your page templates {% endcomment %}
+        {% endblock %}
+        
+        {% block comments %}
+            <footer>
+                <h2>Comments</h2>
+                <script>loadCommentsEtc()</script>
+            </footer>
+        {% endblock %}
+    </div>
+{% endblock %}
